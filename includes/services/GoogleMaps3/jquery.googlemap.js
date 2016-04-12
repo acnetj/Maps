@@ -453,7 +453,7 @@
 			};
 
 			// Map controls
-			mapOptions.panControl = $.inArray('pan', options.controls) != -1;
+			mapOptions.rotateControl = $.inArray('rotate', options.controls) != -1;
 			mapOptions.zoomControl = $.inArray('zoom', options.controls) != -1;
 			mapOptions.mapTypeControl = $.inArray('type', options.controls) != -1;
 			mapOptions.scaleControl = $.inArray('scale', options.controls) != -1;
@@ -525,7 +525,8 @@
 
 			var layerMapping = {
 				'traffic':'new google.maps.TrafficLayer()',
-				'bicycling':'new google.maps.BicyclingLayer()'
+				'bicycling':'new google.maps.BicyclingLayer()',
+				'transit':'new google.maps.TransitLayer()'
 			};
 
 			for (i = options.layers.length - 1; i >= 0; i--) {
