@@ -190,7 +190,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 
 		// Array. List of controls to display onto maps by default.
 		$GLOBALS['egMapsGMaps3Controls'] = [
-			'pan',
+			'rotate',
 			'zoom',
 			'type',
 			'scale',
