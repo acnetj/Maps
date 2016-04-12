@@ -38,7 +38,8 @@ class MapsGoogleMaps3 extends MapsMappingService {
 	 */
 	protected static $mapLayers = [
 		'traffic',
-		'bicycling'
+		'bicycling',
+		'transit'
 	];
 
 	public static $typeControlStyles = [
@@ -55,7 +56,7 @@ class MapsGoogleMaps3 extends MapsMappingService {
 	 * @var array
 	 */
 	protected static $controlNames = [
-		'pan',
+		'rotate',
 		'zoom',
 		'type',
 		'scale',
